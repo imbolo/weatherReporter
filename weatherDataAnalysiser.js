@@ -97,12 +97,11 @@ function getWarning(data) {
 		weatherNames.push(item.weather);
 	});
 
+	console.log(weatherNames);
 	//['晴', '小雨', '雨夹雪', ...]
-	for (condition in warningCondition) {
-		console.log(warningCondition[condition](weatherNames));
+	for (condition in warningCondition) {		
 		if (warningCondition[condition](weatherNames)) {
-			var warning = warningMap[condition];
-			console.log(warning);
+			var warning = warningMap[condition];			
 			result = warning;			
 		}
 	}

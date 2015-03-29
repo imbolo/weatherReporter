@@ -24,8 +24,7 @@ function queryWeatherByCityName(cityName, callback) {
 		response.on('end', function() {
 			var result;
 			try {
-				result = JSON.parse(data);
-				console.log(result);
+				result = JSON.parse(data);				
 				callback(null, result);
 			}
 			catch (e) {
