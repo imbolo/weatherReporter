@@ -1,0 +1,14 @@
+{
+  "name": "weatherReporter",
+  "version": "0.0.1",
+  "main": "main.js",
+  "description": "weather reporter",
+  "keywords": [
+    "weather"
+  ],
+  "author": "liuyang",
+  "dependencies": {
+    "lodash": "^3.6.0",
+    "nodemailer": "^1.2.1"
+  }
+}
